@@ -2,17 +2,20 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import img from "../../assets/images/login/login.svg";
 import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
+import useTitle from "../../Title/useTitle";
+
 
 
 const SignUp = () => {
-    const {createUser}=useContext(AuthContext)
+  const { createUser, googleUser } = useContext(AuthContext);
+  useTitle('Signup');
   const handleSignUp = (event) => {
       event.preventDefault();
       const form = event.target;
       const email = form.email.value;
       const password = form.password.value;
-      //  console.log(email, password);
-    form.reset();
+      // console.log(email, password);
+      form.reset();
       createUser(email, password)
           .then(result => {
               const user = result.user;
@@ -21,6 +24,15 @@ const SignUp = () => {
         .catch(err => console.error(err));
   };
 
+  const handleWithGoogle = () => {
+    googleUser()
+      .then(result => {
+        console.log(result.user);
+      })
+      .catch(error => {
+      console.log(error)
+    })
+  }
   return (
     <div className="hero w-full my-20">
       <div className="hero-content grid gap-20 md:grid-cols-2 flex-col lg:flex-row">
@@ -28,14 +40,19 @@ const SignUp = () => {
           <img className="w-3/4" src={img} alt="" />
         </div>
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 py-20">
-        <h1 className="text-5xl text-center font-bold">Sign Up</h1>
-        <form onSubmit={handleSignUp} className="card-body">
+          <h1 className="text-5xl text-center font-bold">Sign Up</h1>
+          <form onSubmit={handleSignUp} className="card-body">
             <div className="form-control">
-                <label className="label">
-                    <span className="label-text">Name</span>
-                </label>
-                <input type="text" name='name' placeholder="Your Name" className="input input-bordered" />
-            </div>       
+              <label className="label">
+                <span className="label-text">Name</span>
+              </label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                className="input input-bordered"
+              />
+            </div>
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Email</span>
@@ -64,9 +81,14 @@ const SignUp = () => {
               </label>
             </div>
             <div className="form-control mt-6">
-              <input className="btn btn-primary" type="submit" value="Sign Up" />
+              <input
+                className="btn btn-primary"
+                type="submit"
+                value="Sign Up"
+              />
             </div>
           </form>
+          <button onClick={handleWithGoogle}>Continue with Google</button>
           <p className="text-center">
             Already have an account?{" "}
             <Link className="text-orange-600 font-bold" to="/login">
