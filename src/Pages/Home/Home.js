@@ -7,11 +7,11 @@ import useTitle from '../../Title/useTitle';
 const Home = () => {
     useTitle('Home');
     return (
-        <div>
-            <Banner></Banner>
-            <About></About>
-            <Services></Services>
-        </div>
+      <div>
+        <Banner></Banner>
+        <Services></Services>
+        <About></About>
+      </div>
     );
 };
 

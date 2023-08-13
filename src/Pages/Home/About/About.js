@@ -4,7 +4,7 @@ import parts from "../../../assets/images/about_us/parts.jpg";
 
 const About = () => {
   return (
-    <div className="hero my-20">
+    <div className="hero w-[80%] mx-auto my-20">
       <div className="hero-content flex-col lg:flex-row">
         <div className="relative w-1/2">
           <img

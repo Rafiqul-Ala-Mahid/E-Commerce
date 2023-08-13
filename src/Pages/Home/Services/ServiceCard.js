@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const ServiceCard = ({ service }) => {
   const { _id, img, price, title } = service;
   return (
-    <div className="card card-compact p-4 w-96 bg-base-100 shadow-xl">
+    <div className="card card-compact p-4 bg-base-100 shadow-xl">
       <div>
         <img className="rounded-xl h-60" src={img} alt="Shoes" />
       </div>

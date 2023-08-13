@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import img from "../../assets/images/login/login.svg";
 import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
 import useTitle from "../../Title/useTitle";
+import { FcGoogle } from "react-icons/fc";
 
 const Login = () => {
   const [success, setSuccess] = useState(false);
@@ -110,8 +111,14 @@ const Login = () => {
               <input className="btn btn-primary" type="submit" value="Login" />
             </div>
           </form>
-          <button onClick={logInWithGoogle}>Continue With Google</button>
-          <p className="text-center">
+          <button
+            className="flex w-[50%] mx-auto border-2"
+            onClick={logInWithGoogle}
+          >
+            <FcGoogle className="mx-[5px] mt-[3px]"/>
+            Continue With Google
+          </button>
+          <p className="mt-[10px] text-center">
             New to Genius Car?{" "}
             <Link className="text-orange-600 font-bold" to="/signup">
               Sign Up
