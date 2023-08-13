@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import img from "../../assets/images/login/login.svg";
 import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
 import useTitle from "../../Title/useTitle";
-
+import { FcGoogle } from "react-icons/fc";
 
 
 const SignUp = () => {
@@ -88,8 +88,14 @@ const SignUp = () => {
               />
             </div>
           </form>
-          <button onClick={handleWithGoogle}>Continue with Google</button>
-          <p className="text-center">
+          <button
+            className="flex w-[50%] mx-auto border-2"
+            onClick={handleWithGoogle}
+          >
+            <FcGoogle className="mx-[5px] mt-[3px]" />
+            Continue With Google
+          </button>
+          <p className="mt-[10px] text-center">
             Already have an account?{" "}
             <Link className="text-orange-600 font-bold" to="/login">
               Log In

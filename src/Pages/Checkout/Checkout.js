@@ -45,27 +45,34 @@ const Checkout = () => {
   };
   return (
     <div>
-      <form onSubmit={handlePlaceOrder}>
-        <h2 className="text-4xl">You are about to order: {title}</h2>
-        <h4 className="text-3xl">Price: {price}</h4>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <form
+        className="w-[32%] p-[50px] border-4 shadow-lg mx-auto"
+        onSubmit={handlePlaceOrder}
+      >
+        <h2 className="text-xl my-[10px] font-bold">
+          You've ordered: <span className="text-[#FF3811]">{title}</span>
+        </h2>
+        <h4 className="text-xl font-bold">
+          Price: <span className="text-[#4407CB]">{price}</span>
+        </h4>
+        <div className="mt-[20px]">
           <input
             name="firstName"
             type="text"
             placeholder="First Name"
-            className="input input-ghost w-full  input-bordered"
+            className="input input-ghost w-full mb-[20px]  input-bordered"
           />
           <input
             name="lastName"
             type="text"
             placeholder="Last Name"
-            className="input input-ghost w-full  input-bordered"
+            className="input input-ghost w-full mb-[20px]  input-bordered"
           />
           <input
             name="phone"
             type="text"
             placeholder="Your Phone"
-            className="input input-ghost w-full  input-bordered"
+            className="input input-ghost w-full mb-[20px] input-bordered"
             required
           />
           <input
@@ -73,18 +80,22 @@ const Checkout = () => {
             type="text"
             placeholder="Your email"
             defaultValue={user?.email}
-            className="input input-ghost w-full  input-bordered"
+            className="input input-ghost w-full mb-[20px] input-bordered"
             readOnly
           />
         </div>
         <textarea
           name="message"
-          className="textarea textarea-bordered h-24 w-full my-4"
+          className="textarea bg-gray-200 textarea-bordered h-24 w-full mb-4"
           placeholder="Your Message"
           required
         ></textarea>
 
-        <input className="btn mb-4" type="submit" value="Place Your Order" />
+        <input
+          className="bg-[#4407CB] text-white py-[10px] rounded-lg w-[100%] mb-4"
+          type="submit"
+          value="Checkout"
+        />
       </form>
     </div>
   );

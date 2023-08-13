@@ -38,8 +38,8 @@ const Header = () => {
   );
 
   return (
-    <div className="navbar h-20 mt-4 mb-12 p-6">
-      <div className="navbar-start">
+    <div className="navbar h-20 mb-12 p-6">
+      <div className="navbar-start pt-[20px]">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
@@ -68,10 +68,10 @@ const Header = () => {
           <img src={logo} className="h-[60px] w-[60px]" alt="" />
         </Link>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center pt-[20px] hidden lg:flex">
         <ul className="menu menu-horizontal p-0">{menuItems}</ul>
       </div>
-      <div tabIndex={0} className="navbar-end">
+      <div tabIndex={0} className="navbar-end pt-[20px]">
         <div className="indicator btn-ghost p-[15px] mx-[20px]">
           <svg
             xmlns="http://www.w3.org/2000/svg"

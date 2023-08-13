@@ -122,7 +122,7 @@ const Login = () => {
             New to Genius Car?{" "}
             <Link className="text-orange-600 font-bold" to="/signup">
               Sign Up
-            </Link>{" "}
+            </Link>
           </p>
         </div>
       </div>

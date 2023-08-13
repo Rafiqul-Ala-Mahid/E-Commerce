@@ -7,7 +7,7 @@ import useTitle from '../../Title/useTitle';
 const Home = () => {
     useTitle('Home');
     return (
-      <div>
+      <div className=''>
         <Banner></Banner>
         <Services></Services>
         <About></About>
