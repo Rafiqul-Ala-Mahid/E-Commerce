@@ -20,6 +20,7 @@ const AuthProvider = ({ children }) => {
   const provider = new GoogleAuthProvider();
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  let [count, setCount] = useState(0);
 
   const createUser = (email, password) => {
     setLoading(true);
@@ -38,7 +39,6 @@ const AuthProvider = ({ children }) => {
   const logOut = () => {
     return signOut(auth);
   }
-
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {

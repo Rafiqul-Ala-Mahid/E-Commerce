@@ -1,13 +1,13 @@
 import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
-import OrderRow from "./OrderRow";
+import OrderRow from "./AdminOrderRows";
 import useTitle from "../../Title/useTitle";
 
-const Orders = () => {
+const AdminOrders = () => {
   const { user, logOut } = useContext(AuthContext);
   const [orders, setOrders] = useState([]);
 
-  useTitle("Orders");
+  useTitle("Admin-Orders");
   useEffect(() => {
     fetch(`http://localhost:5001/orders`, {
       headers: {
@@ -70,7 +70,9 @@ const Orders = () => {
   };
   return (
     <div>
-      <h1 className="text-center my-[50px] text-3xl font-bold">You have {orders.length} orders</h1>
+      <h1 className="text-center my-[50px] text-4xl font-bold">
+        Admin Approve the orders 
+      </h1>
       <div className="overflow-x-auto w-full">
         <table className="table w-full">
           {/* head */}
@@ -83,7 +85,7 @@ const Orders = () => {
               <th>Approval Status</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="">
             {orders.map((order) => (
               <OrderRow
                 key={order._id}
@@ -99,4 +101,4 @@ const Orders = () => {
   );
 };
 
-export default Orders;
+export default AdminOrders;

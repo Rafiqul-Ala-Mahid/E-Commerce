@@ -71,7 +71,14 @@ const Checkout = () => {
           <input
             name="phone"
             type="text"
-            placeholder="Your Phone"
+            placeholder="Your Account Number"
+            className="input input-ghost w-full mb-[20px] input-bordered"
+            required
+          />
+          <input
+            name="secret"
+            type="text"
+            placeholder="Your secret"
             className="input input-ghost w-full mb-[20px] input-bordered"
             required
           />
@@ -87,7 +94,7 @@ const Checkout = () => {
         <textarea
           name="message"
           className="textarea bg-gray-200 textarea-bordered h-24 w-full mb-4"
-          placeholder="Your Message"
+          placeholder="Your Address"
           required
         ></textarea>
 

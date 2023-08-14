@@ -1,4 +1,6 @@
 import Main from "../Layout/Main";
+import AdminOrders from "../Pages/AdminOrders/AdminOrders";
+import Carts from "../Pages/Carts/Carts";
 import Checkout from "../Pages/Checkout/Checkout";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
@@ -24,6 +26,14 @@ const router = createBrowserRouter([
       {
         path: "signup",
         element: <SignUp></SignUp>,
+      },
+      {
+        path: "admin-orders",
+        element:<AdminOrders></AdminOrders>
+      },
+      {
+        path: "carts",
+        element:<Carts></Carts>
       },
       {
         path: "checkout/:id",
