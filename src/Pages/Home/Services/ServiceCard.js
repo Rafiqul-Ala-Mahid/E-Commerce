@@ -1,6 +1,5 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { AuthContext } from "../../../contexts/AuthProvider/AuthProvider";
 
 export const useCartFunctions = () => {
   const [count, setCount] = useState(0);
@@ -27,22 +26,7 @@ export const useCartFunctions = () => {
 };
 
 const ServiceCard = ({ service }) => {
-  let [count, setCount] = useState(0);
-  const [orders, setOrders] = useState([]);
   const { _id, img, price, title } = service;
-  const addToCart = (img, price, title) => {
-    setCount(count++);
-    console.log(img, price, title, count);
-     const cartItem = {
-       title: title,
-       img: img,
-       count: count + 1,
-     };
-     const newOrders = [...orders, cartItem];
-     setOrders(newOrders);
-     console.log(orders);
-
-  };
   return (
     <div className="card card-compact p-4 bg-base-100 shadow-xl">
       <div>
