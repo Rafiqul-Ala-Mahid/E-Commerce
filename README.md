@@ -11,61 +11,15 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # genius-car
+
+
+<img width="1398" alt="Screenshot 2023-11-05 at 00 13 58" src="https://github.com/Rafiqul-Ala-Mahid/genius-car/assets/53190853/8a1a4fdd-4924-44a6-abe1-819e27ee01fc">
+<img width="1385" alt="Screenshot 2023-11-05 at 00 14 17" src="https://github.com/Rafiqul-Ala-Mahid/genius-car/assets/53190853/981bf752-6df7-4c2a-a565-ed12737f5858">
+<img width="1400" alt="Screenshot 2023-11-05 at 00 14 41" src="https://github.com/Rafiqul-Ala-Mahid/genius-car/assets/53190853/19b70ed5-8224-4f2f-819d-c3b43a9f5d11">
+<img width="1379" alt="Screenshot 2023-11-05 at 00 14 58" src="https://github.com/Rafiqul-Ala-Mahid/genius-car/assets/53190853/c8c07ffa-faf0-4891-b63d-81a287094b80">
+<img width="1386" alt="Screenshot 2023-11-05 at 00 15 11" src="https://github.com/Rafiqul-Ala-Mahid/genius-car/assets/53190853/d293092c-f409-496f-9491-02bd616ee495">
+<img width="1349" alt="Screenshot 2023-11-05 at 00 15 18" src="https://github.com/Rafiqul-Ala-Mahid/genius-car/assets/53190853/e48a6954-365e-440a-97fb-4544bf17d612">
+<img width="1355" alt="Screenshot 2023-11-05 at 00 15 42" src="https://github.com/Rafiqul-Ala-Mahid/genius-car/assets/53190853/0bad738f-09fa-49fd-8976-8f17d625c74b">
+<img width="1389" alt="Screenshot 2023-11-05 at 00 15 49" src="https://github.com/Rafiqul-Ala-Mahid/genius-car/assets/53190853/86c174f9-57d2-4918-b48f-9f8a2acf1d0b">
+<img width="1352" alt="Screenshot 2023-11-05 at 00 16 31" src="https://github.com/Rafiqul-Ala-Mahid/genius-car/assets/53190853/70edf1ed-a3c0-4466-b84d-e9cbea9944c0">
