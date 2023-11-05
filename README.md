@@ -18,9 +18,10 @@ https://github.com/Rafiqul-Ala-Mahid/genius-car-server/tree/main
 # Technology Used:
 1. Reactjs
 2. Tailwind css
-3. Nodejs
-4. Express
-5. MongoDB
+3. DaisyUI
+4. Nodejs
+5. Express
+6. MongoDB
 
 
 # genius-car
