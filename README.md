@@ -15,6 +15,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 # The Server repository for this project
 https://github.com/Rafiqul-Ala-Mahid/genius-car-server/tree/main
 
+# Technology Used:
+1. Reactjs
+2. Tailwind css
+3. Nodejs
+4. Express
+5. MongoDB
+
+
 # genius-car
 
 
