@@ -24,7 +24,7 @@ https://github.com/Rafiqul-Ala-Mahid/genius-car-server/tree/main
 6. MongoDB
 
 
-# genius-car
+# E-Commerce
 
 
 <img width="1398" alt="Screenshot 2023-11-05 at 00 13 58" src="https://github.com/Rafiqul-Ala-Mahid/genius-car/assets/53190853/8a1a4fdd-4924-44a6-abe1-819e27ee01fc">
